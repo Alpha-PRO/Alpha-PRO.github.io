@@ -1,0 +1,276 @@
+/* заголовок */
+* {
+    color: #555
+}
+*{
+    font-family: arial, sans-serif;
+   
+}
+h1 {
+    font-size: 1.5em
+}
+h1,h2,h3,h4,h5,h6{
+    color: #333
+}
+header {
+    background: #fff
+}
+header img{
+    background: #556B2F
+}
+/* Работа с меню */
+header ul{
+    list-style-type: none;
+}
+header li{
+    display: inline-block;
+}
+header img{
+    width: 70px;
+}
+caption{
+    font-size: 1.5em;
+    font-style: italic;
+}
+/* меню */
+nav a{
+    color: #808000;
+}
+
+nav a:link    {color: #A63800}
+nav a:visited {color: #f98f37}
+nav a:active  {color: #d6ac04}
+
+nav a{
+    text-decoration: none
+}
+nav a:hover {
+    color: #d65f04;
+    background: #ffbd9d;
+    text-decoration: underline
+}
+nav a{
+    padding: 5px 10px
+}
+.container {
+    width: 992px;
+    margin: auto
+}
+nav {
+    text-align: right
+}
+
+nav ul{
+    display: inline-block
+}
+header,#banner{
+    margin: 0
+}
+
+/* кнопка */
+.finder{
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px #000;
+    display: block;
+    width: 140px;
+    
+    margin: auto;
+    background-color: #BF6030;/* #808000;*/
+    text-align:center;
+    border-radius: 100px;
+   
+}
+
+/* баннер  -->*/
+#banner{
+    width: auto;
+    /*overflow: hidden;*/
+    background-image: url(original.jpg);
+    background-attachment:inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#banner * {
+    color: #fff;    
+}
+
+#banner h1, .lead, h2{
+    text-align: center;
+    
+}
+h1, caption{
+    text-shadow: 2px 1px 10px;
+}
+#banner blockquote{
+    text-align: center;
+    font-style: normal;
+    font-weight:100;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    font-size: 2rem;
+}
+.back {
+    background: rgba(191, 96, 48, 0.25);
+    border: none;
+}
+
+.download{
+    background: #808000;
+    text-align: center;
+}
+#banner{
+    margin-top: -18px
+}
+/* баннер  <--*/
+
+/*фото новостей*/
+
+#news table{
+  border-collapse: collapse;
+  vertical-align: top;  
+}
+#news img{
+    width: 150px;
+   /* height: 70px*/
+}
+#news td{
+    border: 2px solid #eee;
+    padding: 7px;
+    width: 25%;
+    vertical-align: top;
+}
+
+/* раздел о нас <*/
+
+#about .cols{
+     display: table;
+    text-align: center;
+    vertical-align: top;
+}
+#about .col{
+    display: table-cell;
+    width: 25%;
+    margin: 10px;
+    border: 2px solid #eee;
+    border-collapse: collapse;
+}
+
+#about h3::first-letter{
+    font-size: 3rem;
+    color: #009999/*#aaa;*/
+}
+
+header .container{
+     display: table;
+   /* text-align: center;*/
+}
+header .top{
+    display: table-cell;
+    width: 25%;
+    margin: 0;
+}
+
+/*работа с формами, контакты*/
+ 
+#contacts .row:nth-child(4) *{
+    vertical-align: top
+}
+
+#contacts label {
+    display: inline-block;
+    width: 150px;
+    margin: 10px;
+}
+
+#contacts input,
+#contacts textarea{
+    width: 300px
+}
+
+#contacts .row:nth-child(5) input,
+#contacts .row:nth-child(6) input{
+    width: auto;
+}
+
+#contacts textarea{
+    height: 150px
+}
+
+iframe {
+    border: none;
+    width: 992px;
+    height: 450px;
+}
+
+/* услуги */
+#services a{
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none
+}
+
+#services table, #services tr, #services td{
+    border-collapse: separate;
+    text-align: center;
+    margin: 5px;
+    grid-row: auto;
+    line-height: 350px;
+    column-width: 490px;
+    /*vertical-align: top;*/
+    
+}
+#services tr {
+    width: 100%;
+}
+
+#pic1{
+    background-image: url(key1.jpg); 
+   /* background-attachment:inherit;
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+}
+#pic2{
+     background-image: url(pokupka-kvartiry.jpg); 
+}
+#pic3{
+     background-image: url(frends.jpg); 
+}
+#pic4{
+     background-image: url(com.jpg); 
+}
+#pic5{
+     background-image: url(vil.jpg); 
+}
+#pic6{
+     background-image: url(cap.jpg); 
+}
+
+
+/* отзывы */
+#reviews {
+    background-color: #BF7130;
+}
+#reviews * {
+    color:#fff;
+}
+#reviews figure,
+#reviews p{
+    text-align: center;
+}
+#reviews img{
+    width: 100px;
+    border: 5px solid #fff;
+    border-radius: 100px;
+}
+
+/*#reviews img:hover{
+    width: 300px;
+    opacity: .5;
+}*/
+/* каталог */
+#catalog img{
+    width: 350px;
+    
+}

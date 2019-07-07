@@ -1,0 +1,16 @@
+*{
+    color: #333 !important;
+    background: #fff !impotant;
+}
+.form{
+    display: none;
+}
+.map iframe{
+    width: 100% !impotant;
+}
+a::after{
+    content: '(' attr(href) ')';
+}
+h2{ 
+    page-break-before: always
+}
