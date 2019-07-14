@@ -1,23 +1,45 @@
 <!doctype html>
 <html lang='zxx'>
  <head>
+     
      <title> Агенство недвижимости "АЛЬФА" </title>
      <meta charset="utf-8" />
      <!--<meta name="yandex-verification" content="62cf2e764a99d802" />-->
      <link rel='stylesheet' href='style.css'>
      <link media='screen and (max-width: 768px)' rel="stylesheet" href="mobile.css">
+     
  </head>
+    
 <body>
 
 <header>
     <div class='container'>
-        <div class="top">
+        <div class="toph">
+             <nav>
+                 <ul>
+                    <li><a href='#'><span>Вход/регистрация</span></a>
+                    <li><a href='tel:+7(495)AAA-AA-AA'>&#9990;  +7(495) AAA-AA-AA</a>
+                    <li><a href=' mailto:info@pro'>&#9993; info@alpha.pro</a> 
+                    <li><a href='#'>&#9872; Россия, Рязань, площадь Победы, д.12</a></li>
+                 </ul>
+             </nav>     
+         </div>
+    </div>
+    <hr />
+    <div class='container'>
+        <div class="logo">
             <img src='logo.jpg' alt='logo' /> 
+            <span class="name1">Альфа</span>
+            <span class="name2">про</span>
+            <a href='catalog.zip' class='btn finder'>Поиск</a>
         </div>
+    </div>
+    <hr />
+    <div class='container'>
         <div class="top">
            <nav>           
                 <ul>
-                    <li> <a href='index.html'>Главная</a>
+                    <li> <a href='index.html'><span>Главная</span></a>
                     <li> <a href='catalog.html'>Каталог</a>
                     <li> <a href='service.html'>Услуги</a>
                     <li> <a href='contact.html'>Контакты</a>
@@ -27,7 +49,8 @@
         </div>
     </div>
 </header>
-
+<main>
+       
 <!-- Баннер -->
 
 <div id='banner'>
@@ -40,71 +63,185 @@
 
             <blockquote>Она ощутима, прочна, красива. С моей точки зрения, она даже артистична. Я просто обожаю недвижимость.<em>&#40;Дональд Трамп</em>) 
 
-            </blockquote>
-            
-        <a href='catalog.zip' class='btn finder'>Поиск</a>
+            </blockquote>         
+       
         </div>
     </div>
 </div>
 
- 
+<div class='form'>
+            <form>
+                <div class="row">
+                      <label>Общая площадь</label>
+                      <input type="text" name='square' />
+                 </div>
+                 <div class="row"> 
+                     <label>Стоимость </label>
+                      <input type="number" name="price-low" /> -
+                     <input type="number" name="price-hi" />
+                 </div>
+                 <div class="row">
+                     <input type="checkbox" name="c1" value="a" checked /> Студия
+                     <input type="checkbox" name="c2" value="b" /> 1-комнатная
+                     <input type="checkbox" name="c3" value="c" /> 2-комнатная
+                     <input type="checkbox" name="c4" value="d" /> 3-комнатная
+                     <input type="checkbox" name="c5" value="e" /> 4-комнатная                
+                 </div>
+                 <div class="row">
+                 <select name="rooms" size="1">                   
+                    <option value="1">Север</option>
+                    <option value="2">Юг</option>
+                    <option value="3">Запад</option>
+                    <option value="4">Восток</option>             
+                  </select>
+                </div>
+            </form> 
+    </div> 
 <div id='catalog'>
     <div class='container'>
-    <h2>Список объектов</h2>
-    <!--<p class='lead'>.</p>-->
-        <div class="items">
-            <ul>
-            <li><div class='item'>
+        <div class="products">
+        <div class="product">
+            <h2 class="product-name">Двухкомнатная квартира</h2>
+
+            <p><span class="product-desc">Продается двухкомнатная квартира в новом доме</span></p>
+
+            <div class="offer"> 
+            <span class="product-price">120000</span>
+            <span class="product-price-currency">руб</span> 
+            </div> 
+
+            <p><span class="product-address"><a href="#">ул.Новоселов, д.14</a></span></p>
+            <p><span class="product-map"><a href="#">Показать на карте</a></span></p>
+            <p><span class="product-rooms">2-х комнатная</span></p>
+            <p><span class="product-square">45 кв.м.</span></p>
+            <p><span class="product-type-house">Панельный</span></p>
+            <p><span class="product-level">1 этаж</span></p>
+            
+            <img src="pic2.jpg" class="product-img" alt="Двухкомнатная квартира в новом доме">
+        </div>
+        
+        <div class="product">
+            <h2 class="product-name">Трехкомнатная квартира на Каширке</h2>
+
+            <p><span class="product-desc">Продается трехкомнатная квартира </span></p>
+
+            <div class="offer"> 
+            <span class="product-price">9200000</span>
+            <span class="product-price-currency">руб</span> 
+            </div> 
+
+            <p><span class="product-address"><a href="#">Каширское шоссе, д.14</a></span></p>
+            <p><span class="product-map"><a href="#">Показать на карте</a></span></p>
+            <p><span class="product-rooms">3-х комнатная</span></p>
+            <p><span class="product-square">120 кв.м.</span></p>
+            <p><span class="product-type-house">Кирпичный</span></p>
+            <p><span class="product-level">5 этаж</span></p>
+            
+            <img src="flat1.jpg" class="product-img" alt="Двухкомнатная квартира в новом доме">
+        </div>
+        <div class="product">
+            <h2 class="product-name">Дом в частном секторе</h2>
+
+            <p><span class="product-desc">Продается двухкомнатная квартира в новом доме</span></p>
+
+            <div class="offer"> 
+            <span class="product-price">120000</span>
+            <span class="product-price-currency">RUB</span> 
+            </div> 
+
+            <p><span class="product-address"><a href="#">ул.Новоселов, д.14</a></span></p>
+            <p><span class="product-map"><a href="#">Показать на карте</a></span></p>
+            <p><span class="product-rooms">2-х комнатная</span></p>
+            <p><span class="product-square">45 кв.м.</span></p>
+            <p><span class="product-type-house">Кирпичный</span></p>
+            <p><span class="product-level">4 этаж</span></p>
+            
+            <img src="house1.jpg" class="product-img" alt="Двухкомнатная квартира в новом доме">
+        </div>
+        <div class="product">
+            <h2 class="product-name">Дом в новом районе</h2>
+
+            <p><span class="product-desc">Продается дом с 4 спальнями</span></p>
+
+            <div class="offer"> 
+            <span class="product-price">1420000</span>
+            <span class="product-price-currency">RUB</span> 
+            </div> 
+
+            <p><span class="product-address"><a href="#">ул.Каштановая, д.11</a></span></p>
+            <p><span class="product-map"><a href="#">Показать на карте</a></span></p>
+            <p><span class="product-rooms">4-комнатный дом</span></p>
+            <p><span class="product-square">180 кв.м.</span></p>
+            <p><span class="product-type-house">Кирпичный</span></p>
+            <p><span class="product-level">2 этажа</span></p>
+            
+            <img src="pic3.jpg" class="product-img" alt="Дом в новом районе">
+        </div>
+        
+   <!--     
+   <div class="items">
+            
+            <div class='item'>
                 
                 <h3><img src='pic7.jpg' alt='Квартира в новостройке' /><a href="#">Продается квартира в новостройке...</a></h3>
                 
             </div>
-            <li><div class='item'>
+            <div class='item'>
                 
                 <h3><img src='pic2.jpg' alt='Сдается двухкомнатная квартира в новом доме' /><a href="#">Сдается двухкомнатная квартира в новом доме...</a></h3>
                 <p></p>
             </div>
-            <li><div class='item'>
+            <div class='item'>
                 
-                <h3><img src='pic1.jpg' alt='Сдается однокомнатная квартир' /><a href="#">Сдается однокомнатная квартира...</a></h3>
+                <h3><img src='pic1.jpg' alt='Сдается однокомнатная квартира' /><a href="#">Сдается однокомнатная квартира...</a></h3>
                 
             </div>
-            <li><div class='item'>
+            <div class='item'>
                 
                 <h3><img src='pic3.jpg' alt='Продается дом в Подмосковье' />
                     <a href="#">Продается дом в Подмосковье...</a></h3>
                 <p></p>
             </div>
-            <li><div class='item'>
+            <div class='item'>
                 
                 <h3><img src='pic4.jpg' alt='Продается дом в Рязанской области...'/><a href="#">Продается дом в Рязанской области...</a></h3>
                 <p></p>
             </div>
-            <li><div class='item'>
+            <div class='item'>
                 
                 <h3><img src='pic5.jpg' alt='Сдается офис в центре' /><a href="#">Сдается офис в центре</a></h3>
                 <p></p>
             </div>
-            <li><div class='item'>
+            <div class='item'>
                 
                 <h3><img src='pic6.jpg' alt='Помещение под кафе или ресторан' /><a href="#">Продается коммерческое помещение </a></h3>
                 <p></p>
             </div>
-           <li><div class='item'>
+           <div class='item'>
                
                 <h3> <img src='pic8.jpg' alt='Аренда и продажа нежилых помещений' /><a href="#">Аренда и продажа нежилых помещений</a></h3>
                 <p></p>
             </div>      
         
-        </ul>
+        </div>-->
        </div>
     </div>
 </div>
 
-    
+</main>    
 
 <footer>
     <div class='container'>
+        <div class='foot'>
+        <nav>
+                 <ul>
+                    <li><a href='#'><span>Вход/регистрация</span></a>
+                    <li><a href='tel:+7(495)AAA-AA-AA'>&#9990;  +7(495) AAA-AA-AA</a>
+                    <li><a href=' mailto:info@pro'>&#9993; info@alpha.pro</a> 
+                    <li><a href='#'>&#9872; Россия, Рязань, площадь Победы, д.12</a></li>
+                 </ul>
+             </nav> 
+        </div>
         <p class='lead'> © Доступное жилье каждому. Соблюдайте авторские права.
 
         <a href='#' target=_blank>Сделано специалистом</a></p>

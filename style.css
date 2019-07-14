@@ -19,46 +19,90 @@ header img{
     background: #556B2F
 }
 /* Работа с меню */
-header ul{
+header .top ul{
     list-style-type: none;
 }
 header li{
     display: inline-block;
 }
 header img{
-    width: 70px;
+    width: 50px;
 }
+
+header span.name1{
+    color: #243238;
+    font-variant-caps: all-petite-caps;
+    font-size: 3em;
+    font-weight:bold;
+}
+
+header span.name2{
+    color: #F2732A;
+    font-variant-caps: all-petite-caps;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight:bold;
+}
+
+.logo {
+    display: inline-block;
+}
+
 caption{
     font-size: 1.5em;
     font-style: italic;
 }
 /* меню */
-nav a{
-    color: #808000;
+
+.toph nav a:link    {color: #B2B5AD}
+
+.toph nav a:hover {
+    color: #86AC26;
+    
+   /* background: #ffbd9d;
+    text-decoration: underline*/
+}
+.toph nav a{
+    font-style:italic;
+}
+.top nav a{
+   /* color: #7F9840; - темнее*/
+    font-style: normal;
+    font-variant-caps: all-petite-caps;
+    font-size: 1.5em;
+    font-weight:bold;
 }
 
-nav a:link    {color: #A63800}
-nav a:visited {color: #f98f37}
-nav a:active  {color: #d6ac04}
+
+.top nav a:link    {color: #243238}
+/*nav a:visited {color: #f98f37}*/
+nav a:active  {color: #86AC26}
 
 nav a{
     text-decoration: none
 }
-nav a:hover {
-    color: #d65f04;
-    background: #ffbd9d;
-    text-decoration: underline
+.top nav a:hover {
+    color: #7F9840;
+   /* background: #ffbd9d;
+    text-decoration: underline*/
 }
 nav a{
     padding: 5px 10px
+}
+nav span{
+    color: #769722;
 }
 .container {
     width: 992px;
     margin: auto
 }
-nav {
+/*.top nav, .toph nav {
     text-align: right
 }
+
+.toph nav {
+    text-align:inherit;
+}*/
 
 nav ul{
     display: inline-block
@@ -67,20 +111,30 @@ header,#banner{
     margin: 0
 }
 
+.logo{
+  vertical-align: middle; 
+    display: inline-block;
+}
 /* кнопка */
 .finder{
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 4px;
     text-shadow: 0 1px 1px #000;
-    display: block;
-    width: 140px;
-    
+    display: inline;/*block;*/
+    width: 250px;
+    color: #fff;
     margin: auto;
-    background-color: #BF6030;/* #808000;*/
+    background-color: #F2732A;/* #808000;*/
     text-align:center;
-    border-radius: 100px;
-   
+    font-variant-caps: all-petite-caps;
+    font-size: 1.5em;
+    font-weight:bold;
+    letter-spacing: 3px;
+    
+}
+.finder:hover{
+    background-color: #F1413B;  
 }
 
 /* баннер  -->*/
@@ -274,3 +328,36 @@ iframe {
     width: 350px;
     
 }
+/*#catalog .items{
+     display: table;
+    text-align: center;
+    vertical-align: top;
+}
+#catalog .item{
+    display: table-cell;
+    width: 25%;
+    margin: 10px;
+    border: 2px solid #eee;
+    border-collapse: collapse;
+}*/
+
+#catalog .items, #catalog .products{
+  font-size:0; 
+}
+#catalog .item, #catalog .product{ 
+  vertical-align: top;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-block
+}
+
+/* подвал */
+
+footer{
+    background: #243238;
+}
+.foot a, .foot span {
+    color: whitesmoke;
+}
+
