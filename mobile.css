@@ -2,7 +2,7 @@ header{
     text-align: center
 }
 
-nav ul, nav li{
+nav ul, nav li, nav h3{
     padding: 0;
     margin: 0;
     float: none;
@@ -47,10 +47,19 @@ iframe,
 #about .cols,
 #about .col,
 #about .col1,
-#services td
+#services td,
+footer .foots,
+footer .foot
 {
     display: block;
     width: 100%
 }
 
+.carusel {
+   width: 100%;
+}
 
+#news td{
+    display: block;
+    width: 100%;
+}
