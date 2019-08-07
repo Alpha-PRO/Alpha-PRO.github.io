@@ -7,7 +7,8 @@
      <!--<meta name="yandex-verification" content="62cf2e764a99d802" />-->
      <link rel='stylesheet' href='style.css'>
      <link media='screen and (max-width: 768px)' rel="stylesheet" href="mobile.css">
-       <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+     <script src="script.js"> </script>
  </head>
     
 <body>
@@ -31,7 +32,7 @@
             <img src='logo.jpg' alt='logo' /> 
             <span class="name1">Альфа</span>
             <span class="name2">PRO</span>
-            <a href='catalog.zip' class='btn finder'>Поиск</a>
+            <a href='#' class='btn finder' onclick="Finder">Поиск</a>
         </div>
     </div>
     <hr />
@@ -74,31 +75,18 @@
         <div class='form'>
                 <form>
                     <div class="row">
-                        <label>Общая площадь </label>
-                        <input type="text" name='square' />
+                        <label>Общая площадь <input type="text" name='square' /></label>           
                      </div>
                      <div class="row"> 
-                         <label>Стоимость </label>
-                        <input type="number" name="price-low" /> -
-                         <input type="number" name="price-hi" />
+                         <label>Стоимость <input type="number" name="price-low" /></label>
+                         <label> - <input type="number" name="price-hi" /></label>                        
                      </div>
-                     <div class="row">
-                         
-                         <input type="checkbox" name="c1" value="a" checked />
-                         <label>Студия </label>
-                         
-                         <input type="checkbox" name="c2" value="b" />
-                         <label>1-комнатная</label>
-                         
-                         <input type="checkbox" name="c3" value="c" />
-                         <label>2-комнатная</label>
-                         
-                         <input type="checkbox" name="c4" value="d" />
-                         <label>3-комнатная</label>
-                            
-                         <input type="checkbox" name="c5" value="e" /> 
-                         <label>4-комнатная</label>
-                         
+                     <div class="row">                        
+                         <label><input type="checkbox" name="c1" value="a" checked /> Студия </label>                                                  
+                         <label><input type="checkbox" name="c2" value="b" /> 1-комнатная</label>   
+                         <label><input type="checkbox" name="c3" value="c" /> 2-комнатная</label>
+                         <label><input type="checkbox" name="c4" value="d" /> 3-комнатная</label>
+                         <label><input type="checkbox" name="c5" value="e" /> 4-комнатная</label>
                      </div>
                      <div class="row">
                      <select name="rooms" size="1">                   
