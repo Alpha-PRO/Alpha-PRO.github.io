@@ -167,10 +167,14 @@ header,#banner{
     color: #fff;    
 }
 
-#banner h1, .lead, h2{
-    text-align: center;
-    
+#banner h1, h2{
+  text-align:center;
+    padding: 3px;
 }
+#banner .lead{
+    text-align:left;    
+}
+
 h1, caption{
     text-shadow: 2px 1px 10px;
 }
@@ -434,12 +438,15 @@ header nav, header .logo {
 
 #about .col1 p{
     padding: 5px;
-    margin: 0px;
-    
+    margin: 0px;    
 }
 #about ul{
     list-style-image: url(Check.png);
     list-style-type:circle;
 }
 
-
+#about .lead {
+    margin: 10px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
