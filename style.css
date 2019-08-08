@@ -1,7 +1,7 @@
 /* заголовок */
 *{
-    margin: 0; 
-    padding: 0; 
+    margin: 0px; 
+    padding: 0px; 
     color: #555;
 }
 *{
@@ -68,7 +68,7 @@ main {
 }
 /* меню */
 
-.toph nav a:link    {color: #B2B5AD}
+.toph nav a:link {color: #B2B5AD}
 
 .toph nav a:hover {
     color: #86AC26;
@@ -97,8 +97,8 @@ nav a{
 }
 .top nav a:hover {
     color: #7F9840;
-   /* background: #ffbd9d;
-    text-decoration: underline*/
+   /* background: #ffbd9d;*/
+    text-decoration:none;
 }
 nav a{
     padding: 5px 10px
@@ -420,3 +420,26 @@ footer .foot{
     margin: auto;
     width: 50%;
 }
+/* исправления после добавления стилей для карусели*/
+
+.toph nav a {color: #B2B5AD}
+.top nav a {color: #243238}
+header nav, header .logo {
+    padding: 0px;
+    margin: 0px;
+    /*border-style:double;*/
+}
+
+/* исправления 3*/
+
+#about .col1 p{
+    padding: 5px;
+    margin: 0px;
+    
+}
+#about ul{
+    list-style-image: url(Check.png);
+    list-style-type:circle;
+}
+
+
