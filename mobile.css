@@ -1,6 +1,8 @@
-header{
+header {
     text-align: center
 }
+
+main { width: 100%}
 
 nav ul, nav li, nav h3{
     padding: 0;

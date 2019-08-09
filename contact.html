@@ -91,31 +91,33 @@
        <div class='form'>
             <form>
                 <div class="row">
-                      <label>Ваше имя <input type="text" name='firstname' /></label>
+                    <label for="firstname">Ваше имя</label>
+                    <input type="text" name='firstname' />
                       
                  </div>
                  <div class="row"> 
-                     <label>Ваш Email <input type="email" name="email" /></label>
-                      
+                     <label for="email">Ваш Email</label>
+                     <input type="email" name="email" />                      
                  </div>
                  <div class="row">
-                     <label>Тема <input type="text" required /></label>
-                     
+                     <label for="tema">Тема</label>
+                     <input type="text" name="tema" required />
                  </div>
                  <div class="row">
-                     <label>Сообщение <textarea 
+                     <label for="msg">Сообщение </label>
+                     <textarea 
                       name='msg' 
                       placeholder='введите сообщение'
                       required
-                      ></textarea></label>
+                      ></textarea>
                       <br/>
                  </div>
                  <!--<div class="row">
                       <input type="file" name="myfile"/>
                  </div>-->
                  <div class="row">
-                    <label>Принимаю условия <input type="checkbox" name="rules" value="1" required/></label>
-                    
+                    <label for='rules'>Принимаю условия </label>
+                     <input type="checkbox" name="rules" value="1" required/>                    
                  </div>
                  <div class="row">
                   <input type='submit' />

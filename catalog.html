@@ -9,7 +9,7 @@
      <link media='screen and (max-width: 768px)' rel="stylesheet" href="mobile.css">
      
      <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
-     
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
      <script src="script.js"> </script>
  </head>
     
@@ -62,7 +62,7 @@
         
             <h1 style='text-align: center' title='Агенство недвижимости Альфа-PRO'>Весь мир у ваших ног!</h1>
 
-            <p class="lead">Вся недвижимость в одном месте</p>
+            <p class="lead banner">Вся недвижимость в одном месте</p>
 
             <blockquote>Она ощутима, прочна, красива. С моей точки зрения, она даже артистична. Я просто обожаю недвижимость.<em>&#40;Дональд Трамп</em>) 
 
@@ -72,23 +72,39 @@
     </div>
 </div>
 
-<div id="Finder">
+<div id="finder">
    <div class='container'> 
         <div class='form'>
                 <form>
                     <div class="row">
-                        <label>Общая площадь <input type="text" name='square' /></label>           
+                        <label for="square" class="label">Общая площадь </label>  
+                        <input type="number" name='square' />
                      </div>
+                
                      <div class="row"> 
-                         <label>Стоимость <input type="number" name="price-low" /></label>
-                         <label> - <input type="number" name="price-hi" /></label>                        
+                         <label for='price-low' class="label">Стоимость</label>
+                         <input type="number" name="price-low" />
+                         <label for='price-hi'> - </label>  
+                         <input type="number" name="price-hi" />
                      </div>
-                     <div class="row">                        
-                         <label><input type="checkbox" name="c1" value="a" checked /> Студия </label>                                                  
-                         <label><input type="checkbox" name="c2" value="b" /> 1-комнатная</label>   
-                         <label><input type="checkbox" name="c3" value="c" /> 2-комнатная</label>
-                         <label><input type="checkbox" name="c4" value="d" /> 3-комнатная</label>
-                         <label><input type="checkbox" name="c5" value="e" /> 4-комнатная</label>
+               
+                     <div class="row"> 
+                         
+                         <input type="checkbox" name="c1" value="a" checked /> 
+                         <label for="c1">Студия </label>
+                         
+                         <input type="checkbox" name="c2" value="b" />
+                         <label for="c2"> 1-комнатная</label>  
+                         
+                         <input type="checkbox" name="c3" value="c" />
+                         <label for="c3"> 2-комнатная</label>
+                         
+                         <input type="checkbox" name="c4" value="d" />
+                         <label for="c4"> 3-комнатная</label>
+                         
+                         <input type="checkbox" name="c5" value="e" />
+                         <label for="c5"> 4-комнатная</label>
+                         
                      </div>
                      <div class="row">
                      <select name="rooms" size="1">                   

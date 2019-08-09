@@ -374,11 +374,7 @@ iframe {
   box-sizing: border-box;
   display: inline-block
 }
-/*#Finder label{
-  display: inline-block;
-  width: 150px;
-  margin:10px
-}*/
+
 #catalog .products{
   font-size:0; 
   text-align: center
@@ -435,6 +431,9 @@ header nav, header .logo {
 }
 
 /* исправления 3*/
+#about h2{
+    padding: 10px;
+}
 
 #about .col1 p{
     padding: 5px;
@@ -443,10 +442,63 @@ header nav, header .logo {
 #about ul{
     list-style-image: url(Check.png);
     list-style-type:circle;
+    margin-left: 40px;
+    
 }
 
-#about .lead {
+#about .lead{
     margin: 10px;
-    /*line-height: 20px;*/
+    line-height: 1.5em;
     letter-spacing: 0.5px;
+}
+
+/* поиск catalog начало */
+
+#finder input[type=number]{
+    width: 100px;
+}
+
+input[type=number]:focus {
+  background-color: #B2B5AD;
+}
+
+#finder label{
+    display:inline-block;
+    width: auto;
+    margin: 5px;
+}
+
+#finder label.label{
+  
+  width: 150px;
+  
+}    
+/*Поиск catalog конец*/
+
+#services p.work{
+  line-height: 30px;
+  letter-spacing: 0.5px;  
+} 
+
+main {
+    margin-bottom: 20px;
+}
+footer .foots{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+.foot nav a:hover {
+    color: #86AC26;
+}
+
+
+.foots h3{
+    line-height: 2em;
+}
+#about .col p {
+    line-height: 1.5;
+}
+#banner .banner{
+    text-align: center;
 }
