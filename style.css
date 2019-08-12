@@ -16,6 +16,15 @@ h1{
 h1,h2,h3,h4,h5,h6 {
     color: #333
 }
+/* исправление стилей карусели начало*/
+
+.main_header *{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* исправление стилей карусели конец*/
+
 header {
     background: #fff;
     margin: 20px;
@@ -41,20 +50,20 @@ header img{
 header span.name1{
     color: #243238;
     font-variant-caps: all-petite-caps;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight:bold;
 }
 
 header span.name2{
     color: #F2732A;
     font-variant-caps: all-petite-caps;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-style: italic;
     font-weight:bold;
 }
 
 .logo {
-    display: inline-block;
+    display: inline-block;    
 }
 
 caption{
@@ -78,23 +87,22 @@ main {
 }
 .toph nav a{
     font-style:italic;
+    text-decoration: none;
 }
 .top nav a{
    /* color: #7F9840; - темнее*/
     font-style: normal;
     font-variant-caps: all-petite-caps;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight:bold;
+    text-decoration: none;
 }
 
-
+.top nav a:visited {color:#57656B}
 .top nav a:link    {color: #243238}
 /*nav a:visited {color: #f98f37}*/
 nav a:active  {color: #86AC26}
 
-nav a{
-    text-decoration: none
-}
 .top nav a:hover {
     color: #7F9840;
    /* background: #ffbd9d;*/
@@ -106,6 +114,16 @@ nav a{
 nav span{
     color: #769722;
 }
+/*исправление карусели*/
+#news .container a:hover{
+    text-decoration: none;
+    color: #769722; 
+}
+#news .container a:active{
+    color: #556B2F;
+}
+/*end*/
+
 .container {
     width: 992px;
     margin: auto
@@ -237,11 +255,11 @@ h1, caption{
     color: #009999/*#aaa;*/
 }
 
-header .container{
+header .container, .main_header .container{
      display: table;
    /* text-align: center;*/
 }
-header .top{
+header .top, .container .top{
     display: table-cell;
     width: 25%;
     margin: 0;
@@ -420,7 +438,6 @@ footer .foot{
     margin: auto;
     width: 50%;
 }
-/* исправления после добавления стилей для карусели*/
 
 .toph nav a {color: #B2B5AD}
 .top nav a {color: #243238}
@@ -484,17 +501,21 @@ main {
     margin-bottom: 20px;
 }
 footer .foots{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    line-height: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    line-height: 1.5rem;
 }
 .foot nav a:hover {
     color: #86AC26;
+    text-decoration: none;
 }
 
+.foot nav a{
+    text-decoration: none;
+}
 
 .foots h3{
-    line-height: 2em;
+    line-height: 2rem;
 }
 #about .col p {
     line-height: 1.5;
@@ -502,3 +523,38 @@ footer .foots{
 #banner .banner{
     text-align: center;
 }
+
+/*настройка после подключения стилей карусели на главной странице begin*/
+
+#news a{
+    color: #555;
+}
+
+.bottom a {
+    color: #7F9840;
+}
+
+.bottom a:hover {
+    color: #86AC26;
+    text-decoration: none;
+}
+
+.logo a:hover{
+    color: white;
+}
+
+.logo img{
+    vertical-align: text-bottom;
+}
+header hr{
+    color: #243238;
+    background-color: #243238;
+}
+.toph li, .top li{
+    margin-right: 20px;
+}
+.bottom *{
+    font-size: 0.8rem;
+}
+/*настройка после подключения стилей карусели на главной странице end*/
+

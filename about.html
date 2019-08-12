@@ -5,52 +5,61 @@
      <title> Агенство недвижимости "АЛЬФА-PRO" </title>
      <meta charset="utf-8" />
      <!--<meta name="yandex-verification" content="62cf2e764a99d802" />-->
-     <link rel='stylesheet' href='style.css'>
+     
      <link media='screen and (max-width: 768px)' rel="stylesheet" href="mobile.css">
+     
      <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel='stylesheet' href='style.css'>
+     <script src="script.js"> </script>
+          
  </head>
     
 <body>
 
 <header>
-    <div class='container'>
-        <div class="toph">
-             <nav>
-                 <ul>
-                    <li><a href='#'><span>Вход/регистрация</span></a>
-                    <li><a href='tel:+7(495)AAA-AA-AA'>&#9990;  +7(495) AAA-AA-AA</a>
-                    <li><a href=' mailto:info@pro'>&#9993; info@alpha.pro</a> 
-                    <li><a href='#'>&#9872; Россия, Рязань, площадь Победы, д.12</a></li>
-                 </ul>
-             </nav>     
-         </div>
-    </div>
-    <hr />
-    <div class='container'>
-        <div class="logo">
-            <img src='logo.jpg' alt='logo' /> 
-            <span class="name1">Альфа</span>
-            <span class="name2">PRO</span>
-            <a href='catalog.zip' class='btn finder'>Поиск</a>
+    <div class='main_header'>
+        <div class='container'>
+            <div class="toph">
+                 <nav>
+                     <ul>
+                        <li><a href='#'><span>Вход/регистрация</span></a>
+                        <li><a href='tel:+7(495)AAA-AA-AA'>&#9990;  +7(495) AAA-AA-AA</a>
+                        <li><a href=' mailto:info@pro'>&#9993; info@alpha.pro</a> 
+                        <li><a href='#'>&#9872; Россия, Рязань, площадь Победы, д.12</a>
+                     </ul>
+                 </nav>     
+             </div>
         </div>
-    </div>
-    <hr />
-    <div class='container'>
-        <div class="top">
-           <nav>           
-                <ul>
-                    <li> <a href='index.html'><span>Главная</span></a>
-                    <li> <a href='catalog.html'>Каталог</a>
-                    <li> <a href='service.html'>Услуги</a>
-                    <li> <a href='contact.html'>Контакты</a>
-                    <li> <a href='about.html'>О компании</a>
-                </ul>    
-            </nav>
+        <hr />
+        <div class='container'>
+            <div class="logo">
+                <img src='logo.jpg' alt='logo' /> 
+                <span class="name1">Альфа</span>
+                <span class="name2">PRO</span>
+                <a href='#' class='btn finder' onclick="Finder">Поиск</a>
+            </div>
+        </div>
+        <hr />
+        <div class='container'>
+            <div class="top">
+               <nav>           
+                    <ul>
+                        <li> <a href='index.html'><span>Главная</span></a>
+                        <li> <a href='catalog.html'>Каталог</a>
+                        <li> <a href='service.html'>Услуги</a>
+                        <li> <a href='contact.html'>Контакты</a>
+                        <li> <a href='about.html'>О компании</a>
+                    </ul>    
+                </nav>
+            </div>
         </div>
     </div>
 </header>
+    
 <main>
-    <!-- Баннер -->
+<!-- Баннер -->
     <div id='banner'>
      <div class="back">   
         <div class='container'>
@@ -59,9 +68,11 @@
 
                 <p class="lead banner">Вся недвижимость в одном месте</p>
 
-                <blockquote>Она ощутима, прочна, красива. С моей точки зрения, она даже артистична. Я просто обожаю <strong>недвижимость</strong>.<em>&#40;Дональд Трамп</em>)
+                <blockquote>Она ощутима, прочна, красива. С моей точки зрения, она даже артистична. Я просто обожаю недвижимость.<em>&#40;Дональд Трамп</em>) 
+
                 </blockquote>
 
+            <!--<a href='catalog.zip' class='btn finder'>Поиск</a>-->
             </div>
         </div>
     </div>
@@ -168,9 +179,10 @@
                  </nav>
             </div>
     </div>
-       <p class='lead'> © Доступное жилье каждому. Соблюдайте авторские права.
-
-        <a href='#' target=_blank>Сделано специалистом</a></p>
+        <div class='bottom'>
+           <p class='lead'> © Доступное жилье каждому. Соблюдайте авторские права.
+           <a href='#' target=_blank>Сделано специалистом</a></p>
+        </div>
     </div>
 </footer>  
 </body>
