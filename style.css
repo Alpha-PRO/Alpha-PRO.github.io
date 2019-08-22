@@ -465,7 +465,7 @@ header nav, header .logo {
 
 #about .lead{
     margin: 10px;
-    line-height: 1.5em;
+    line-height: 1.5rem;
     letter-spacing: 0.5px;
 }
 
@@ -548,7 +548,9 @@ footer .foots{
 }
 header hr{
     color: #243238;
-    background-color: #243238;
+    background-color: #243238; /* Цвет линии для браузера Firefox и Opera */
+    border: none; /* Убираем границу для браузера Firefox */
+    height: 1px; /* Толщина линии */
 }
 .toph li, .top li{
     margin-right: 20px;
@@ -558,3 +560,6 @@ header hr{
 }
 /*настройка после подключения стилей карусели на главной странице end*/
 
+.bottom .show_hide{
+    display: none;
+}
