@@ -139,3 +139,18 @@ footer .foot*/
 .finder:hover{
     background-color: #F1413B;  
 }
+/*исправления 4*/
+#finder .form input{
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: red;
+    
+}
+
+.col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+
+

@@ -472,11 +472,13 @@ header nav, header .logo {
 /* поиск catalog начало */
 
 #finder input[type=number]{
-    width: 100px;
+    width: 30%;
+    border: 2px solid green;
+    border-radius: 4px;
 }
 
 input[type=number]:focus {
-  background-color: #B2B5AD;
+  background-color: #FCF4E2;
 }
 
 #finder label{
@@ -563,3 +565,23 @@ header hr{
 .bottom .show_hide{
     display: none;
 }
+
+#finder .form input{
+    padding: 10px 8px;
+    margin: 8px 0;
+   
+    
+}
+/*
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+*/
