@@ -469,30 +469,88 @@ header nav, header .logo {
     letter-spacing: 0.5px;
 }
 
-/* поиск catalog начало */
-
-#finder input[type=number]{
-    width: 30%;
-    border: 2px solid green;
+/* Форма поиска catalog начало */
+/*****************************************************************/
+#finder{
+box-sizing: border-box;
+}
+#finder input[type=number], select{
+    /*width: 30%;
+    border: 1px solid green;*/
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
     border-radius: 4px;
+   /* resize: vertical;*/
 }
 
-input[type=number]:focus {
-  background-color: #FCF4E2;
+#finder input[type=number]:focus {
+    /*background-color: #eee;*/
+    border: 1px solid gray;
+     
 }
 
 #finder label{
     display:inline-block;
     width: auto;
-    margin: 5px;
+   /* margin: 5px;*/
+    padding: 12px 12px 12px 0;
 }
 
 #finder label.label{
   
   width: 150px;
   
-}    
+}  
+.line {
+    display: inherit;
+    width: 75%
+}
+.line input{
+    padding-right: 22px;
+}
+#finder .form input{
+    padding: 10px 8px;
+    margin: 8px 0;    
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 3px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 3px;
+}
+
+.right{  
+  float: right;
+}
+
+
+#finder .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+    overflow: auto;
+}
+
+.flex-box{
+    flex: auto;
+    vertical-align:middle
+}
+/******************************************************************/
 /*Поиск catalog конец*/
+/******************************************************************/
 
 #services p.work{
   line-height: 30px;
@@ -541,7 +599,7 @@ footer .foots{
     text-decoration: none;
 }
 
-.logo a:hover{
+.logo a:hover, .btn-hover a:hover{
     color: white;
 }
 
@@ -565,23 +623,7 @@ header hr{
 .bottom .show_hide{
     display: none;
 }
-
-#finder .form input{
-    padding: 10px 8px;
-    margin: 8px 0;
-   
-    
+.img-float {
+    float: left;
+    margin-right: 20px;
 }
-/*
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-*/

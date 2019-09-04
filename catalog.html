@@ -94,40 +94,60 @@
                         </div>
                      </div>
                 
-                     <div class="row"> 
-                         <label for='price-low' class="label">Стоимость</label>
-                         <input type="number" name="price-low" />
-                         <label for='price-hi'> - </label>  
-                         <input type="number" name="price-hi" />
+                     <div class="row">
+                         <div class="col-25">
+                            <label for='price-low' class="label">Стоимость</label>
+                         </div>
+                         <div class="line">
+                             <input type="number" name="price-low" />
+                             <label for='price-hi'> - </label>  
+                             <input type="number" name="price-hi" />
+                         </div>
                      </div>
                
                      <div class="row"> 
-                         
+                        <div class="flex-box">
                          <input type="checkbox" name="c1" value="a" checked /> 
                          <label for="c1">Студия </label>
+                        </div>
                          
+                         <div class="flex-box">
                          <input type="checkbox" name="c2" value="b" />
                          <label for="c2"> 1-комнатная</label>  
+                         </div>
                          
+                         <div class="flex-box">
                          <input type="checkbox" name="c3" value="c" />
                          <label for="c3"> 2-комнатная</label>
+                         </div>
                          
+                         <div class="flex-box">
                          <input type="checkbox" name="c4" value="d" />
                          <label for="c4"> 3-комнатная</label>
+                         </div>
                          
+                         <div class="flex-box">
                          <input type="checkbox" name="c5" value="e" />
                          <label for="c5"> 4-комнатная</label>
+                         </div>
                          
                      </div>
                      <div class="row">
-                     <select name="rooms" size="1">                   
+                    <div class="col-25">
+                        <label for="rooms">Направление</label>
+                    </div>
+                    <div class="col-25">
+                     <select id="rooms" name="rooms" size="1">                   
                         <option value="1">Север</option>
                         <option value="2">Юг</option>
                         <option value="3">Запад</option>
                         <option value="4">Восток</option>             
                       </select>
                     </div>
-                    <a href='#' class='btn finder' onclick="Finder">Подобрать варианты</a>
+                    </div>
+                    <div class="btn-hover right">
+                        <a href='#' class='btn finder' onclick="Finder">Подобрать</a>
+                    </div>
                 </form> 
         </div> 
     </div>      
@@ -141,8 +161,8 @@
             <p><span class="product-desc">Продается двухкомнатная квартира в новом доме</span></p>
 
             <div class="offer"> 
-            <span class="product-price">120000</span>
-            <span class="product-price-currency">руб</span> 
+                <span class="product-price">120000</span>
+                <span class="product-price-currency">руб</span> 
             </div> 
 
             <p><span class="product-address"><a href="#">ул.Новоселов, д.14</a></span></p>
