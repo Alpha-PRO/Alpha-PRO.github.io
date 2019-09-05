@@ -115,11 +115,11 @@ nav span{
     color: #769722;
 }
 /*исправление карусели*/
-#news .container a:hover{
+#news .container h3 a:hover{
     text-decoration: none;
     color: #769722; 
 }
-#news .container a:active{
+#news .container h3 a:active{
     color: #556B2F;
 }
 /*end*/
@@ -225,7 +225,7 @@ h1, caption{
   vertical-align: top;  
 }
 #news img{
-    width: 150px;
+    width: 100%;
    /* height: 70px*/
 }
 #news td{
@@ -279,14 +279,14 @@ header .top, .container .top{
 
 #contacts input,
 #contacts textarea{
-    width: 300px
+    width: 75%;
 }
-
+/*
 #contacts .row:nth-child(5) input,
 #contacts .row:nth-child(6) input{
     width: auto;
 }
-
+*/
 #contacts textarea{
     height: 150px
 }
@@ -463,10 +463,12 @@ header nav, header .logo {
     
 }
 
-#about .lead{
+#about .lead1{
     margin: 10px;
+    font-size: 1.2rem;
     line-height: 1.5rem;
     letter-spacing: 0.5px;
+    text-align: inherit;
 }
 
 /* Форма поиска catalog начало */
@@ -502,13 +504,7 @@ box-sizing: border-box;
   width: 150px;
   
 }  
-.line {
-    display: inherit;
-    width: 75%
-}
-.line input{
-    padding-right: 22px;
-}
+
 #finder .form input{
     padding: 10px 8px;
     margin: 8px 0;    
@@ -520,7 +516,7 @@ box-sizing: border-box;
   margin-top: 3px;
 }
 
-.col-75 {
+form .col-75 {
   float: left;
   width: 75%;
   margin-top: 3px;
@@ -544,10 +540,7 @@ box-sizing: border-box;
     overflow: auto;
 }
 
-.flex-box{
-    flex: auto;
-    vertical-align:middle
-}
+
 /******************************************************************/
 /*Поиск catalog конец*/
 /******************************************************************/
@@ -586,7 +579,7 @@ footer .foots{
 
 /*настройка после подключения стилей карусели на главной странице begin*/
 
-#news a{
+#news h3 a{
     color: #555;
 }
 
@@ -626,4 +619,38 @@ header hr{
 .img-float {
     float: left;
     margin-right: 20px;
+}
+/*Форма оставления заявки*/
+
+.form input[type=submit]{
+    width: 25%;
+    background-color: #F2732A;
+    color: white;
+    text-shadow: 0 1px 1px #000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    text-align:center;
+    font-variant-caps: all-petite-caps;
+    font-size: 1.2em;
+    font-weight:bold;
+    letter-spacing: 2.5px;    
+}
+
+/*форма оставления заявки конец*/
+
+.link a, news .link a {
+    /*color: #009999;*/
+    color: #7F9840;
+    font-style: oblique; 
+        
+}
+.link a:hover, news .link a  {
+    color: #86AC26;
+    text-decoration:underline;
+}
+input[type=checkbox]{
+    text-align: left;
 }
