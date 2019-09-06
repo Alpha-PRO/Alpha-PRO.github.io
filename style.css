@@ -679,5 +679,5 @@ input[type=checkbox]{
 /*что-то делаю не так...*/
 .check-alighn {
     text-align: left;
-    border: 2px solid black;
+   /* border: 2px solid black;*/
 }
