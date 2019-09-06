@@ -358,16 +358,12 @@ iframe {
     border-radius: 100px;
 }
 
-#product img:hover{
+#product img{
     width: 300px;
     opacity: .5;
+    float: none;
 }
 
-/* каталог */
-#catalog img{
-   /* width: 350px;*/
-    
-}
 
 /*#catalog .items{
      display: table;
@@ -382,16 +378,12 @@ iframe {
     border-collapse: collapse;
 }*/
 
-#catalog .items, #catalog .products{
+/*#catalog .items, 
+#catalog .products{
   font-size:0; 
-}
-#catalog .item, #catalog .product{ 
-  vertical-align: top;
-  font-size: 1rem;
-  width: 100%;
-  box-sizing: border-box;
-  display: inline-block
-}
+}*/
+/*#catalog .item, */
+
 
 #catalog .products{
   font-size:0; 
@@ -403,14 +395,28 @@ iframe {
   width: 50%;
   box-sizing: border-box;
   display: inline-block;  
-  margin: 10px 0
+  margin: 0;
+    height: 600px;
+    border: 2px solid #eee;
 }
 #catalog .product p{
-  width: 230px;
+  width: 75%;/*230px;*/
   margin: auto;
   text-align: justify
 }
 
+#catalog .product-img{
+    vertical-align: bottom;
+}
+#catalog img{
+   width: 75%;
+
+}
+.offer{
+    
+   
+}
+/* каталог */
 /* подвал */
 
 footer h3{
@@ -496,30 +502,33 @@ box-sizing: border-box;
     display:inline-block;
     width: auto;
    /* margin: 5px;*/
-    padding: 12px 12px 12px 0;
+    padding: 10px 10px 10px 0;
 }
 
 #finder label.label{
   
-  width: 150px;
+  width: 100%;/*150px;*/
   
 }  
 
+#finder .form {
+    margin-bottom: 20px;
+}
 #finder .form input{
-    padding: 10px 8px;
-    margin: 8px 0;    
+    padding: 7px 5px;
+    margin: 3px 0;    
 }
 
 .col-25 {
   float: left;
   width: 25%;
-  margin-top: 3px;
+  margin-top: 2px;
 }
 
 form .col-75 {
   float: left;
   width: 75%;
-  margin-top: 3px;
+  margin-top: 2px;
 }
 
 .right{  
@@ -596,6 +605,7 @@ footer .foots{
     color: white;
 }
 
+
 .logo img{
     vertical-align: text-bottom;
 }
@@ -623,7 +633,7 @@ header hr{
 /*Форма оставления заявки*/
 
 .form input[type=submit]{
-    width: 25%;
+    width: 50px;
     background-color: #F2732A;
     color: white;
     text-shadow: 0 1px 1px #000;
@@ -633,12 +643,14 @@ header hr{
     cursor: pointer;
     float: right;
     text-align:center;
-    font-variant-caps: all-petite-caps;
+    /*font-variant-caps: all-petite-caps;*/
     font-size: 1.2em;
     font-weight:bold;
     letter-spacing: 2.5px;    
 }
-
+.form input[type=submit]:hover{
+    background-color: #F1413B;
+}
 /*форма оставления заявки конец*/
 
 .link a, news .link a {
@@ -648,9 +660,24 @@ header hr{
         
 }
 .link a:hover, news .link a  {
-    color: #86AC26;
+    color: #86AC26; /*#556B2F*/
     text-decoration:underline;
 }
 input[type=checkbox]{
     text-align: left;
+}
+#finder .line{
+    width: 20%;
+    display: inline;
+}
+.btn-submit{
+    width: 25%;
+    float: right;
+    margin-right: 18%;
+}
+
+/*что-то делаю не так...*/
+.check-alighn {
+    text-align: left;
+    border: 2px solid black;
 }
